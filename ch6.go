@@ -115,12 +115,12 @@ func one(xPtr *int) {
 	*xPtr = 1
 }
 
-func exercise2(x uint) (uint, bool) {
-	return uint(x / 2), bool(x%2 == 0)
+func exercise2(x int) (int, bool) {
+	return x / 2, x%2 == 0
 }
 
-func exercise3(x ...uint) uint {
-	var max uint = 0
+func exercise3(x ...int) int {
+	var max int
 	for _, v := range x {
 		if v >= max {
 			max = v
@@ -130,19 +130,15 @@ func exercise3(x ...uint) uint {
 }
 
 func makeOddGenerator() func() uint {
-	i := uint(0)
+	i := uint(1)
 	return func() (ret uint) {
 		ret = i
-		if ret == 0 {
-			i++
-		} else {
-			i += 2
-		}
+		i += 2
 		return
 	}
 }
 
-func fib(x uint) uint {
+func fib(x int) int {
 	if x == 0 {
 		return 0
 	}
@@ -155,14 +151,12 @@ func fib(x uint) uint {
 }
 
 func exercise11(x, y *int) {
-	x2 := *x
-	y2 := *y
-	*y = x2
-	*x = y2
+	*x, *y = *y, *x
 }
 
 /* Exercises
 1: func sum(a []int) uint
+Fout: return is int niet uint
 2: see exercise2()
 3: see exercise3()
 4: see makeOddGenerator() / main()

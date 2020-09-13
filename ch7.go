@@ -113,6 +113,7 @@ func main() {
 /* Exercises
 1: methods use receiver instances; it lets you use the . operator in stead of defining arguments
 2: it lets you inherit properties, flattening the struct
+2a: Lets you use methods directly on the containing type
 3: see main()
 
 */

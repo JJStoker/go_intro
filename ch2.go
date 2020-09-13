@@ -25,7 +25,7 @@ func main() {
 
 /*
 Exercises
-1: as bits, using various sizes like 8bit / 32bit / 64bit
+1: binary numeriek systeem, 1 en 0
 2: 11111111 (255)
 3: see main() -> 1321.615664
 4: sequence of characters that represent text

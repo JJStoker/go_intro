@@ -14,12 +14,12 @@ func Average(xs []float64) float64 {
 
 // Finds the smallest value of a series of numbers
 func Min(xs []float64) float64 {
-	min := 0.0
+	var min float64
 	if len(xs) == 0 {
-		return min
+		return 0.0
 	}
-	for _, x := range xs {
-		if min == 0.0 || x < min {
+	for i, x := range xs {
+		if i == 0 || x < min {
 			min = x
 		}
 	}
@@ -28,12 +28,12 @@ func Min(xs []float64) float64 {
 
 // Finds the largest value of a series of numbers
 func Max(xs []float64) float64 {
-	max := 0.0
+	var max float64
 	if len(xs) == 0 {
-		return max
+		return 0.0
 	}
-	for _, x := range xs {
-		if max == 0.0 || x > max {
+	for i, x := range xs {
+		if i == 0 || x > max {
 			max = x
 		}
 	}

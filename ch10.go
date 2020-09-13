@@ -134,8 +134,9 @@ func main() {
 }
 
 /* Exercises
-1. <- operator: write only like s chan <- string / read only like s <- chan string
+1. <- operator: send-only like s chan <- string / receive-only like s <- chan string
 2. see main()
-3. Bufferend channels will block new writes when the results queue is full
-var c chan string = make(chan string, 20)
+3. Bufferend channels will only block new writes when the results queue is full,
+but let send operations to succeed regardless if the receiver is ready.
+var c chan int = make(chan int, 20)
 */

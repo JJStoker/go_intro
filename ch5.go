@@ -115,9 +115,9 @@ func exercise4() {
 		19, 97, 9, 17,
 	}
 
-	min := 100
-	for _, v := range x {
-		if v <= min {
+	var min int
+	for i, v := range x {
+		if i == 0 || v <= min {
 			min = v
 		}
 	}
@@ -127,6 +127,6 @@ func exercise4() {
 /* Exercises
 1: x[3]
 2: 3, with capacity of 9. Above 9 it will create a new array and return a new slice.
-3: c, d, e, f
+3: c, d, e
 4: see exercise4()
 */

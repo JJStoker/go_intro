@@ -325,8 +325,9 @@ func commandLineExercises() {
 
 /* Exercises
 1: re-use code between applications
-2: Capital casing makes it public
-3: instead of the folder name, you can import the pachage as; import m "package-name/sub-dir"; m.Average(3, 5)
++ break up larger programs into smaller, easier to understand and easier to maintain programs.
+2: Capital casing are exported and accessible from other packages
+3: package alias for a package, specified when importing; import m "package-name/sub-dir"; m.Average(3, 5)
 4: see example-packages/math/math.go
 5: Adding a comment above the functions
 */
