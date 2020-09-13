@@ -9,3 +9,5 @@ My notes while learning Go from the book "Introducing Go".
 - [`Chapter 6`](./ch6.go)
 - [`Chapter 7`](./ch7.go)
 - [`Chapter 8`](./ch8/exercises.go)
+- [`Chapter 9`](./ch9.md)
+- [`Chapter 10`](./ch10.go)
